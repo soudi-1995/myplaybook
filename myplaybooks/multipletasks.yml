@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  connection: ssh
+  user: ansible
+
+
+  tasks: 
+     - name: installing multiple packages
+       yum:
+          name: [ 'git' , 'httpd' , 'tree' , 'docker' , 'mysql' , 'wget' ]
+          state: installed
+

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  user: ansible
+  connection: ssh
+  become: true
+
+  tasks:
+    - name: deleting folder
+      file:
+         path: /home/ansible/teju
+         state: absent
+    

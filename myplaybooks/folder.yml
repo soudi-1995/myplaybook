@@ -1,0 +1,13 @@
+--- # foldr
+- name: my test 
+  hosts: all
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: folder creation
+      file: 
+         path: /home/ansible/teju
+         state: directory
+

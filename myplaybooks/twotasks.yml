@@ -1,0 +1,17 @@
+--- # 2 tasks
+- name: my two tasks
+  hosts: all
+  become: true
+
+  tasks: 
+     - name: installing package
+       yum:
+          name: httpd
+          state: latest
+
+
+     - name: start service
+       service: 
+          name: httpd
+          state: started 
+

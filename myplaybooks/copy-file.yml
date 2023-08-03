@@ -1,0 +1,12 @@
+---
+- hosts: all
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: copying a file
+      copy:
+         src: /home/ansible/index.html
+         dest: /home/ansible
+          

@@ -1,0 +1,10 @@
+--- #s/w
+- name: s/w installation process
+  hosts: all
+
+  tasks: 
+     - name: install package mysql
+       yum:
+         name: mysql
+         state: latest
+

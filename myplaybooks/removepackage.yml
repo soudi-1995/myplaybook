@@ -1,0 +1,13 @@
+--- #s/w remove
+- name: s/w removal process
+  hosts: all
+  user: ansible
+  connection: ssh
+  become: yes
+
+  tasks:
+    - name: removal ackage into hosts
+      yum:
+        name: docker
+        state: absent 
+

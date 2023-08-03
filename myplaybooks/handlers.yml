@@ -1,0 +1,19 @@
+--- # handler file
+- hosts: all
+  user: ansible
+  connection: ssh
+  become: yes
+
+  tasks: 
+     - name: installing httpd into all
+       action: yum name=httpd state=present
+       notify: start httpd service
+ 
+  handlers: 
+     - name: start httpd service
+       action: service name=httpd state=started
+
+
+  ignore_errors: yes
+
+

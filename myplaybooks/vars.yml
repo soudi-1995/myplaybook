@@ -1,0 +1,12 @@
+--- # my vars section
+- hosts: all
+  user: ansible
+  connection: ssh
+  become: true
+
+  vars: 
+     pkgname: httpd
+
+  tasks: 
+    - name: installing httpd on all
+      action: yum name='{{pkgname}}' state=latest

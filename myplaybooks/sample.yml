@@ -1,0 +1,19 @@
+--- # sample filr
+- hosts: all
+  user: ansible
+  connection: ssh
+  become: yes
+
+  tasks:
+     - name: creating a file with ansible playbook
+       file: path=/tmp/soudii.txt state=file
+
+
+     - name: creating a folder  with ansible playbook
+       file: path=/home/ansible/abcdir state=directory
+
+
+     - name: copying a file to hosts
+       copy: src=./123xyz dest=/home/ansible
+
+
