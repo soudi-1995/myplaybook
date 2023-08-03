@@ -261,3 +261,67 @@ vi dwld.yml
 ansible-playbook dwld.yml
 cat dwld.yml
 vi dwldjenkins.yml
+ls
+vi dwldjenkins.yml
+ansible-playbook dwnldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+vi dwldjenkins.yml
+ansible-playbook dwldjenkins.yml
+mkdir -p playbook/roles/testrole/tasks
+sudo yum install tree -y
+tree
+cd playbook
+tree
+touch roles/testrile/tasks/main.yml
+touch roles/testfile/tasks/main.yml
+touch roles/testrole/tasks/main.yml
+touch master.yml
+tree
+vi roles/testrole/tasks/main.yml 
+vi master.yml
+tree
+ansible-playbook master.yml
+vi master.yml
+ansible-playbook master.yml
+ls
+cd ..
+ls
+mkdir myplaybooks
+mv *.yml myplaybooks//
+ls
+cat 123xyz
+vi 123xyz
+rm rf 123xyz 
+rm -rf 123xyz
+ls
+VI INDEX.HTML
+vi index.html
+mv index.html myplaybooks//
+ls
+ls /home/ansible/playbook
+mv playbook myplaybooks//
+ls
+git init
+ls
+ls -a
+git add .
+git status
+git config --global user.name "soudi" 
+git config --global user.email "irukuvajjhulasss@gmail.com"
+git config --list
+git remote add origin git@github.com:soudi-1995/myplaybook.git
+sudo git push -u origin master
+git commit -m "all yml files" 
+sudo git push -u origin master
